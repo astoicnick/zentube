@@ -17,13 +17,15 @@ namespace ZenTube.API.Controllers
     public class SearchController : ControllerBase
     {
         [HttpGet]
-        [Route("test")]
         public async IAsyncEnumerable<SearchResultModel> getSearchResults(string keyword)
         {
-            var searchService = new SearchService();
-            await foreach (var item in searchService.SearchForVideos(keyword))
+            if (keyword != null)
             {
-                yield return item;
+                var searchService = new SearchService();
+                await foreach (var item in searchService.SearchForVideos(keyword))
+                {
+                    yield return item;
+                }
             }
         }
     }
