@@ -1,0 +1,26 @@
+﻿@model SearchModel
+@{
+    ViewData["Title"] = "Search";
+}
+<form asp-action="Search">
+    <div style="text-align:center;margin: 0 auto;">
+        <h1>Search</h1>
+        <input asp-for="Keyword" type="text" />
+        <button type="submit">Search</button>
+    </div>
+</form>
+<div>
+    @if (Model.Results != null)
+    {
+        await foreach (var item in Model.Results)
+        {
+            <div class="jumbotron">
+                <h1>
+                    @item.Title
+                </h1>
+                <img src="@item.Thumbnails.High" />
+            </div>
+        }
+    }
+</div>
+

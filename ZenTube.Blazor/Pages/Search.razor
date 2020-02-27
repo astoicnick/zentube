@@ -1,0 +1,22 @@
+﻿@page "/"
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <h1 style="font-family: 'Kaushan Script';text-align: center;">Search</h1>
+            <div class="jumbotron">
+                <div class="row">
+                        <div class="col-6">
+                            <input type="text" placeholder="Search ZenTube" @bind="Keyword" />
+                        </div>
+                        <div class="col-6">
+                                <a href="/SearchResults/@Keyword">Search</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    public string Keyword { get; set; }
+}

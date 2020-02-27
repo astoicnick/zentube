@@ -1,0 +1,51 @@
+﻿@page "/SearchResults/{Keyword}"
+@using ZenTube.Models;
+@using ZenTube.Repository;
+<div class="container">
+    @try
+    {
+        <div class="row">
+            <div class="jumbotron">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <form method="post" @onsubmit="SearchVideos">
+                            <input @bind="Keyword" type="text"/>
+                            <button type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+                @foreach (var item in Results)
+                {
+                    @if (item.VideoId != null)
+                    {
+                        <WatchVideo Video="item"></WatchVideo>
+                    }
+                }
+            </div>
+        </div>
+    }
+    catch
+    {
+
+    }
+</div>
+@code {
+    [Parameter]
+    public string Keyword { get; set; }
+    public List<SearchResultModel> Results { get; set; }
+
+    private async void SearchVideos()
+    {
+        Results = new List<SearchResultModel>();
+        var search = new Repository.SearchService();
+        await foreach (var result in search.SearchForVideos(Keyword))
+        {
+            Results.Add(result);
+            this.StateHasChanged();
+        }
+    }
+    protected override void OnInitialized()
+    {
+        SearchVideos();
+    }
+}

@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29326.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZenTube.Repository", "ZenTube.Repository\ZenTube.Repository.csproj", "{C623A6C2-1118-4BDC-A37D-368C016426B8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZenTube.API", "ZenTube.API\ZenTube.API.csproj", "{FC06FC90-B15F-498C-9DAC-8DA37D9EDF69}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZenTube.Models", "ZenTube.Models\ZenTube.Models.csproj", "{3D149502-A9C1-4F5E-A628-296995715E7D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZenTube.Blazor", "ZenTube.Blazor\ZenTube.Blazor.csproj", "{EB85EF85-5A04-428F-9E94-22B99261597F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C623A6C2-1118-4BDC-A37D-368C016426B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C623A6C2-1118-4BDC-A37D-368C016426B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C623A6C2-1118-4BDC-A37D-368C016426B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C623A6C2-1118-4BDC-A37D-368C016426B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC06FC90-B15F-498C-9DAC-8DA37D9EDF69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC06FC90-B15F-498C-9DAC-8DA37D9EDF69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC06FC90-B15F-498C-9DAC-8DA37D9EDF69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC06FC90-B15F-498C-9DAC-8DA37D9EDF69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D149502-A9C1-4F5E-A628-296995715E7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D149502-A9C1-4F5E-A628-296995715E7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D149502-A9C1-4F5E-A628-296995715E7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D149502-A9C1-4F5E-A628-296995715E7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB85EF85-5A04-428F-9E94-22B99261597F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB85EF85-5A04-428F-9E94-22B99261597F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB85EF85-5A04-428F-9E94-22B99261597F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB85EF85-5A04-428F-9E94-22B99261597F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AC0C1277-1E28-41BC-B855-9079C8A3DC88}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Pages\SearchVideos\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Blazor.Extensions.Storage" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ZenTube.Models\ZenTube.Models.csproj" />
+    <ProjectReference Include="..\ZenTube.Repository\ZenTube.Repository.csproj" />
+  </ItemGroup>
+
+</Project>
