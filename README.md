@@ -4,7 +4,7 @@
 Although YouTube has a great business model and it's making them a lot of money, it's based around selling people's attention. As a software developer, when you have a problem or you have a technology you need/want to learn, you don't want to waste time.
 ZenTube helps me and hopefully helps you remove YouTube's business model for the few hours of the day I need to put my head down and learn as much as I possibly can about X topic.
 ## Quickstart
-Create a file in the repository folder called "youtubeAPIKey.json". You want the file to follow this format: { "apiKey": "YOURAPIKEYHERE" }. You can then run the project and get snoopin'!
+Create a file in the repository folder called "youtubeAPIKey.json". You want the file to follow this format: { "apiKey": "YOURAPIKEYHERE" }. Inside the Repository.SearchService class, replace the path of the file with the path of YOUR file (example: /home/nickperry/code/side-projects/zentube/dotnet/ZenTube.Repository/youtubeAPIKey.json ). You're all set!
 ## Running this project
 You can run this project by opening the solution in Visual Studio, creating a  file in the ZenTube.Repository folder with your apiKey in it, and then running the Blazor project.
 You can get a YouTube API Key from [here](https://developers.google.com/youtube/v3/getting-started). <br>
